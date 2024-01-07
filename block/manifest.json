@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Блокировка цифр 1, 2, 3, 4",
+  "version": "1.1",
+  "description": "Расширение для удаления цифр 1, 2, 3, 4 на веб-сайтах",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
